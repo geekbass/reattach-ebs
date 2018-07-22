@@ -13,8 +13,8 @@ write_files:
     set -x
 
     # device names how they exist from OS. Add more vars here if need more devices.
-    DEV=${device}1
-    devpath=$(readlink -f $DEV)
+    dev=${device}1
+    devpath=$(readlink -f $dev)
 
     # Create the initial directory in case it doesnt exist
     mkdir -pv ${directory}
